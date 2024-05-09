@@ -12,11 +12,12 @@ import {
 import { FaTrash } from 'react-icons/fa';
 import Message from '../components/Message';
 import { addToCart, removeFromCart } from '../slices/cartSlice';
+// import a from '../../../uploads/image-1713257361576.webp';
 
 const CartScreen = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-
+  // console.log(a);
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
 
